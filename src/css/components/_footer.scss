@@ -1,12 +1,13 @@
 .footer {
 	&_main {
-		padding: 4rem 0;
+		padding: 5rem 0;
 	}
 
 	&_copyright {
 		span {
 			display: inline-block;
-			transform: translateY(50%);
+			font-size: 1.6rem;
+			transform: translateY(30%);
 		}
 	}
 }

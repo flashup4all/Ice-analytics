@@ -2,6 +2,11 @@
 	margin: auto;
 	max-width: 1140px;
 
+	&_med{
+		@extend .container;
+		max-width: 1000px;
+	}
+
 	&-max {
 		@extend .container;
 		max-width: 1200px;

@@ -23,3 +23,11 @@ $border-rad-1: 100px;
 	justify-content: center;
 	align-items: center;
 }
+
+@mixin respond($device){
+	@if ($device== gsm){
+		@media (max-width:480/16 * 1em){
+			@content
+		}
+	}
+}

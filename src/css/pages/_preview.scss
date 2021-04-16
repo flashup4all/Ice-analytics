@@ -1,0 +1,10 @@
+.iframe_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    iframe{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+}

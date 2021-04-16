@@ -30,3 +30,9 @@ a:visited {
 li {
 	list-style-type: none;
 }
+[class~="heading"]{
+	display: inline-block;
+}
+.heading_small{
+	font-size: 1.7rem;
+}
