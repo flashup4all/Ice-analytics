@@ -8,10 +8,12 @@ const sideBarData = [
   {
     text: 'prospective site',
     image: avatar + '#avatar',
+    to: '/',
   },
   {
     text: 'Active site',
     image: chart + '#pie',
+    to: '/activesite',
   },
 ];
 
