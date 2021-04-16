@@ -1,0 +1,28 @@
+.sidebar {
+	font-size: 1.6rem;
+
+	button {
+		font-size: inherit;
+		font-family: inherit;
+	}
+	&_list {
+		display: grid;
+		row-gap: 2rem;
+	}
+
+	&_link {
+		width: 100%;
+
+		color: $col-purple;
+		font-weight: $weight-1;
+		position: relative;
+		padding: 3rem 1rem 3rem 5rem;
+		&.active,
+		&:hover {
+			color: $col-gray-1;
+			background-color: $col-purple;
+			box-shadow: 0 0 1.9rem rgba(18, 38, 63, 0.1);
+			transition: 0.13s linear;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.header {
+	&_main {
+		padding: 2rem 0;
+		padding-bottom: 1.5rem;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		right: 0;
+	}
+	&_branding {
+		height: 6.6rem;
+	}
+	&_nav {
+		padding: 1rem 0;
+		padding-bottom: 1.5rem;
+	}
+}

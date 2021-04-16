@@ -1,0 +1,7 @@
+.main_divider {
+	min-height: 85vh;
+	margin-top: 12rem;
+	& > * {
+		padding-top: 3rem;
+	}
+}

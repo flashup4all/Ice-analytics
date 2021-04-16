@@ -1,0 +1,12 @@
+.footer {
+	&_main {
+		padding: 4rem 0;
+	}
+
+	&_copyright {
+		span {
+			display: inline-block;
+			transform: translateY(50%);
+		}
+	}
+}
