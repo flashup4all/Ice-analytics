@@ -1,14 +1,15 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
-const SidebarLink = ({text, image}) => {
+const SidebarLink = ({text, image, to}) => {
   return (
     <li className="sidebar_list_item">
-      <button className={`sidebar_link btn_plain cap flexi bg-g-2`}>
+      <NavLink to={to} className={`sidebar_link btn_plain cap flexi bg-g-2`}>
         <svg className="small_svg mr-1">
           <use xlinkHref={image} />
         </svg>
         <span className="heading_small  cap"> {text}</span>
-      </button>
+      </NavLink>
     </li>
   );
 };
