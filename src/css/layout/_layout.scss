@@ -2,7 +2,11 @@
 	margin: auto;
 	max-width: 1140px;
 
-	&_med{
+	@include respond(1200) {
+		padding: 0 1.5rem;
+	}
+
+	&_med {
 		@extend .container;
 		max-width: 1000px;
 	}

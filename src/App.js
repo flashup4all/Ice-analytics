@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {createContext} from 'react';
 import {Redirect, Route, Switch} from 'react-router-dom';
 // COMPONENTS
 import Header from './components/shared/Header';
@@ -7,10 +7,22 @@ import Sidebar from './components/shared/Sidebar';
 // PAGES
 import ProspectivePage from './components/pages/ProspectivePage';
 import ActiveSitepage from './components/pages/ActiveSitepage';
+// HOOKs
+import UseModal from './components/hooks/UseModal';
+
+export const Appctx = createContext ();
 
 function App () {
+  const {close, isOpen, open} = UseModal (true);
+
   return (
-    <Fragment>
+    <Appctx.Provider
+      value={{
+        open,
+        close,
+        isOpen,
+      }}
+    >
       <Header />
       <section className="grid con_1_4 mt-5 main_divider">
         <Sidebar />
@@ -22,12 +34,12 @@ function App () {
             <Route exact path="/activesite">
               <ActiveSitepage />
             </Route>
-          <Redirect to="/prospective"/>
+            <Redirect to="/prospective" />
           </Switch>
         </main>
       </section>
       <Footer />
-    </Fragment>
+    </Appctx.Provider>
   );
 }
 

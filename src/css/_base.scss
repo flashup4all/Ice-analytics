@@ -8,6 +8,17 @@
 }
 html {
 	font-size: 62.5%;
+
+	@include respond(tab_land) {
+		font-size: 61%;
+	}
+
+	@include respond(tab_land) {
+		font-size: 60%;
+	}
+	@include respond(500) {
+		font-size: 56%;
+	}
 }
 
 body {
@@ -30,9 +41,9 @@ a:visited {
 li {
 	list-style-type: none;
 }
-[class~="heading"]{
+[class~='heading'] {
 	display: inline-block;
 }
-.heading_small{
+.heading_small {
 	font-size: 1.7rem;
 }

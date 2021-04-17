@@ -12,7 +12,7 @@
 .col-g-2 {
 	background-color: $col-gray-2;
 }
-.col-purp{
+.col-purp {
 	color: $col-purple;
 }
 .bord-1 {
@@ -119,9 +119,6 @@
 	left: 0;
 	background-color: rgba($col-black, 0.4);
 }
-.bold {
-	font-weight: bold;
-}
 
 .fill {
 	width: 100%;
@@ -139,20 +136,11 @@
 .cap {
 	text-transform: capitalize;
 }
-.head_text {
-	p {
-		width: 78%;
-		margin: auto;
-		margin-top: 1.3rem;
-	}
-}
+
 .br {
 	border-radius: $border-rad;
 }
 
-.topup {
-	z-index: 1;
-}
 .round {
 	border-radius: 50%;
 }

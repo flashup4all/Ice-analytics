@@ -1,0 +1,48 @@
+.hamburger {
+	display: inline-block;
+	position: relative;
+	width: 3.2rem;
+	height: 2.3rem;
+	cursor: pointer;
+
+	&:hover {
+		&::before {
+			transform: translateY(2px);
+		}
+		&::after {
+			transform: translateY(-2px);
+		}
+	}
+	&.open {
+		&::before {
+			top: 50%;
+			transform: translateY(-50%) rotate(45deg);
+			transition-delay: 0.1s;
+		}
+
+		&::after {
+			bottom: 50%;
+			transform: translateY(50%) rotate(-45deg);
+		}
+	}
+
+	&::before,
+	&::after {
+		width: 100%;
+		height: 3px;
+		left: 0;
+		right: 0;
+		content: '';
+		background-color: $col-purple;
+		position: absolute;
+		border-radius: $border-rad-1;
+		transition: 0.2s linear;
+	}
+
+	&::before {
+		top: 0;
+	}
+	&::after {
+		bottom: 0;
+	}
+}

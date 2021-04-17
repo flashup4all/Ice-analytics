@@ -3,10 +3,12 @@
 @import './utils/utils';
 @import './layout/layout';
 
+// COMPONENTS
+@import './components/hamburger';
 @import './components/header';
 @import './components/sidbar';
 @import './components/footer';
 
 // PAGES
 @import './pages/home';
-@import "./pages/preview";
+@import './pages/preview';
