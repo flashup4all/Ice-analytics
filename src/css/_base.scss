@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+html {
+	font-size: 62.5%;
+
+	@include respond(tab_land) {
+		font-size: 61%;
+	}
+
+	@include respond(tab_land) {
+		font-size: 60%;
+	}
+	@include respond(500) {
+		font-size: 56%;
+	}
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
+	font-size: 1.4rem;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+a:link,
+a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+[class~='heading'] {
+	display: inline-block;
+}
+.heading_small {
+	font-size: 1.7rem;
+}

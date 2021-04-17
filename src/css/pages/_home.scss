@@ -1,0 +1,18 @@
+.main_divider {
+	position: relative;
+	min-height: 80vh;
+	margin-top: 10rem;
+
+	@include respond(902) {
+		min-height: 90vh;
+		grid-template-columns: 1fr;
+		margin-top: 5rem;
+	}
+	& > * {
+		padding-top: 3rem;
+
+		@include respond(tab_port) {
+			padding-top: 2rem;
+		}
+	}
+}

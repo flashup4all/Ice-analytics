@@ -1,0 +1,17 @@
+.footer {
+	&_main {
+		padding: 5rem 0;
+
+		@include respond(500) {
+			padding: 3rem 0;
+		}
+	}
+
+	&_copyright {
+		span {
+			display: inline-block;
+			font-size: 1.6rem;
+			transform: translateY(30%);
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.container {
+	margin: auto;
+	max-width: 1140px;
+
+	@include respond(1200) {
+		padding: 0 1.5rem;
+	}
+
+	&_med {
+		@extend .container;
+		max-width: 1000px;
+	}
+
+	&-max {
+		@extend .container;
+		max-width: 1200px;
+	}
+}
+.con_1_4 {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+}
+.div_4 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+	gap: 2rem;
+}
+.smart_con {
+	grid-template-columns: repeat(auto-fit, 250px);
+	display: grid;
+	gap: 4rem;
+}

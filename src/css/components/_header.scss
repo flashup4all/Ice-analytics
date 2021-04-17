@@ -1,0 +1,39 @@
+.header {
+	&_main {
+		padding: 2rem 0;
+		padding-bottom: 1.5rem;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		right: 0;
+
+		@include respond(900) {
+			box-shadow: 0 3px 1.5rem rgba(0, 0, 0, 0.06);
+		}
+	}
+	&_branding {
+		flex: 1;
+		img {
+			height: 5rem;
+
+			@include respond(tab_port) {
+				height: 3.5rem;
+			}
+		}
+	}
+	&_nav {
+		.menu {
+			display: none;
+
+			@include respond(908) {
+				display: inline-block;
+			}
+		}
+	}
+	&_branding {
+		@include respond(tab_port) {
+			@include center-flex;
+		}
+	}
+}

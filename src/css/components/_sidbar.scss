@@ -1,0 +1,65 @@
+.backdrop {
+	z-index: 8;
+}
+.sidebar {
+	font-size: 1.6rem;
+	position: relative;
+	& > .hamburger {
+		display: none;
+
+		@include respond(902) {
+			display: inline-block;
+			position: absolute;
+			top: 2rem;
+			right: 1.5rem;
+		}
+	}
+
+	@include respond(1230) {
+		width: 30rem;
+	}
+	@include respond(902) {
+		z-index: 11;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 40vw;
+	}
+
+	@include respond(gsm) {
+		width: 55vw;
+	}
+	@include respond(400) {
+		width: 70vw;
+	}
+
+	button {
+		font-size: inherit;
+		font-family: inherit;
+	}
+	&_list {
+		display: grid;
+		row-gap: 2rem;
+
+		@include respond(902) {
+			margin-top: 4rem;
+		}
+	}
+
+	&_link {
+		width: 100%;
+
+		color: $col-purple;
+		font-weight: $weight-1;
+		position: relative;
+		padding: 3rem 1rem 3rem 5rem;
+		&.active,
+		&:hover {
+			color: $col-gray-1;
+			background-color: $col-purple;
+			box-shadow: 0 0 1.9rem rgba(18, 38, 63, 0.1);
+			transition: 0.13s linear;
+		}
+	}
+}
