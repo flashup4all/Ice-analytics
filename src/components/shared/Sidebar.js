@@ -38,7 +38,7 @@ const sideBarData = [
   },
 ];
 
-const breakpoint = 900;
+const breakpoint = 950;
 
 const Sidebar = () => {
   const width = useResize ();
