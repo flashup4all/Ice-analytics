@@ -2,6 +2,15 @@
 	margin: auto;
 	max-width: 1140px;
 
+	@include respond(1200) {
+		padding: 0 1.5rem;
+	}
+
+	&_med {
+		@extend .container;
+		max-width: 1000px;
+	}
+
 	&-max {
 		@extend .container;
 		max-width: 1200px;

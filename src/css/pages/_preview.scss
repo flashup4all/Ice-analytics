@@ -1,0 +1,18 @@
+.iframe_container {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	h2 {
+		@include respond(tab_port) {
+			margin-left: 1rem;
+		}
+	}
+
+	iframe {
+		width: 100%;
+		aspect-ratio: 16/9;
+		@include respond(tab_port) {
+			aspect-ratio: 9/16;
+		}
+	}
+}

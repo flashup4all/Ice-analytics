@@ -23,3 +23,27 @@ $border-rad-1: 100px;
 	justify-content: center;
 	align-items: center;
 }
+
+@mixin respond($device) {
+	@if ($device== tab_land) {
+		@media (max-width: 1000/16 * 1em) {
+			@content;
+		}
+	} @else if ($device== tab_port) {
+		@media (max-width: 768/16 * 1em) {
+			@content;
+		}
+	} @else if ($device== gsm) {
+		@media (max-width: 515/16 * 1em) {
+			@content;
+		}
+	} @else if ($device== large_pc) {
+		@media (min-width: 1200/16 * 1em) {
+			@content;
+		}
+	} @else {
+		@media (max-width: #{$device /16 }em) {
+			@content;
+		}
+	}
+}
