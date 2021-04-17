@@ -73,7 +73,7 @@ const Sidebar = () => {
             >
               {/* this span will be used to close the sidebar */}
               <span className="hamburger open" onClick={close} />
-              <ul className="sidebar_list mb-2">
+              <ul className="sidebar_list  mt-2">
                 {sideBarData.map ((data, index) => (
                   <SidebarLink
                     key={index}

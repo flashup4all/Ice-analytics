@@ -1,6 +1,6 @@
 .header {
 	&_main {
-		padding: 2rem 0;
+		padding: 1.2rem 0;
 		padding-bottom: 1.5rem;
 		position: fixed;
 		top: 0;
@@ -15,7 +15,7 @@
 	&_branding {
 		flex: 1;
 		img {
-			height: 5rem;
+			height: 4.4rem;
 
 			@include respond(tab_port) {
 				height: 3.5rem;

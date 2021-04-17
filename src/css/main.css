@@ -32,7 +32,6 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  min-height: 100vh;
   font-size: 1.4rem;
 }
 
@@ -446,6 +445,10 @@ li {
   max-width: 1000px;
 }
 
+.container_small {
+  max-width: 900px;
+}
+
 .container-max {
   max-width: 1200px;
 }
@@ -527,7 +530,7 @@ li {
 }
 
 .header_main {
-  padding: 2rem 0;
+  padding: 1.2rem 0;
   padding-bottom: 1.5rem;
   position: fixed;
   top: 0;
@@ -550,7 +553,7 @@ li {
 }
 
 .header_branding img {
-  height: 5rem;
+  height: 4.4rem;
 }
 
 @media (max-width: 48em) {
@@ -647,7 +650,7 @@ li {
 
 @media (max-width: 56.375em) {
   .sidebar_list {
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
 }
 
@@ -669,13 +672,11 @@ li {
 }
 
 .footer_main {
-  padding: 5rem 0;
-}
-
-@media (max-width: 31.25em) {
-  .footer_main {
-    padding: 3rem 0;
-  }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 0;
 }
 
 .footer_copyright span {
@@ -687,8 +688,9 @@ li {
 
 .main_divider {
   position: relative;
-  min-height: 80vh;
-  margin-top: 10rem;
+  height: calc(100% - 8.5rem);
+  margin-top: 8rem;
+  padding-bottom: 7rem;
 }
 
 @media (max-width: 56.375em) {
@@ -700,13 +702,13 @@ li {
   }
 }
 
-.main_divider > * {
-  padding-top: 3rem;
+.prospective > [class~='container'] > *:first-child {
+  margin-left: 4rem;
 }
 
 @media (max-width: 48em) {
-  .main_divider > * {
-    padding-top: 2rem;
+  .prospective > [class~='container'] > *:first-child {
+    margin-left: 1rem;
   }
 }
 
@@ -715,16 +717,13 @@ li {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-}
-
-@media (max-width: 48em) {
-  .iframe_container h2 {
-    margin-left: 1rem;
-  }
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 
 .iframe_container iframe {
   width: 100%;
+  height: 100%;
   aspect-ratio: 16/9;
 }
 
