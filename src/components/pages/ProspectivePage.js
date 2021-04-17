@@ -7,7 +7,7 @@ const ProspectivePage = () => {
 
         <div className="iframe_container fill mt-2">
           <h2 className="weit-2 col-purp heading_small mb-2 pt-1 ml-4 cap">
-            preview of sample dashboard
+            Prospective Site Dashboard
           </h2>
           <iframe
             title="power_bi"
