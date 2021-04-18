@@ -26,7 +26,7 @@ function App () {
       <Header />
       <section className="grid con_1_4 mt-5 main_divider">
         <Sidebar />
-        <main className="bg-g-1">
+        <main className="bg-g-1 fill">
           <Switch>
             <Route exact path="/prospective">
               <ProspectivePage />
