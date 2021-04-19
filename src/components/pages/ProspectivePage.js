@@ -4,17 +4,21 @@ const ProspectivePage = () => {
   return (
     <section className="prospective fill">
       <div className="container">
-        <h2 className="weit-2 col-purp heading_small mb-1 pt-1 ml-4 cap">
-          preview of sample dashboard
+
+        <h2 className="weit-3 col-purp heading_small mb-1 pt-1 ml-4 cap">
+          prospective site dashboard
+
         </h2>
 
       </div>
 
       <div className="container_small ">
         <div className="iframe_container fill mt-2">
+
           <h2 className="weit-2 col-purp heading_small mb-2 pt-1 ml-4 cap">
             Prospective Site Dashboard
           </h2>
+
           <iframe
             title="power_bi"
             src="https://app.powerbi.com/view?r=eyJrIjoiYjhiZWM0ZmItNjE5Yi00OWZhLTgwYzgtM2YyMzFmNjQ2YzZhIiwidCI6ImM0NjNjMzgwLWY5OGUtNDg1Ny04OTQ2LTZiYjAwMDQyOGJjYSJ9"
@@ -28,3 +32,4 @@ const ProspectivePage = () => {
 };
 
 export default ProspectivePage;
+

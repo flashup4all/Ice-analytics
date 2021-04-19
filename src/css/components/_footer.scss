@@ -4,14 +4,15 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		padding: 2rem 0;
+		padding: 1.5rem 0;
 	}
 
 	&_copyright {
 		span {
 			display: inline-block;
 			font-size: 1.6rem;
-			transform: translateY(30%);
+
 		}
 	}
 }
+
