@@ -1,7 +1,9 @@
 .main_divider {
 	position: relative;
 	height: calc(100% - 8.5rem);
+
 	margin-top: 7rem;
+
 	padding-bottom: 7rem;
 
 	@include respond(902) {
@@ -9,4 +11,6 @@
 		grid-template-columns: 1fr;
 		margin-top: 6rem;
 	}
+
 }
+

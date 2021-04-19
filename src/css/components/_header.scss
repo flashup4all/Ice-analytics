@@ -1,7 +1,9 @@
 .header {
 	&_main {
 		padding: 1.2rem 0;
-		padding-bottom: 1rem;
+
+		padding-bottom: 1.5rem;
+
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -36,4 +38,6 @@
 			@include center-flex;
 		}
 	}
+
 }
+
