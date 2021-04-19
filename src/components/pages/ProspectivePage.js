@@ -4,8 +4,8 @@ const ProspectivePage = () => {
   return (
     <section className="prospective fill">
       <div className="container">
-        <h2 className="weit-2 col-purp heading_small mb-1 pt-1 ml-4 cap">
-          preview of sample dashboard
+        <h2 className="weit-3 col-purp heading_small mb-1 pt-1 ml-4 cap">
+          prospective site dashboard
         </h2>
 
       </div>
